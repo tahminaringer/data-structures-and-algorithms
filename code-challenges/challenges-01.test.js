@@ -87,21 +87,22 @@ Iterate over the array using forEach to determine the output based on several ru
 
 Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
-
 const fizzbuzz = (arr) => {
-  fizzbuzz.forEach(arr);
-  if (num/3) {
-    arr.push('Fizz');
-  } else if (num/5) {
-    arr.push('Buzz');
-  } else if (num/5 && num/3) {
-    arr.push('Fizz Buzz');
-  } else (!num) {
-    num.push(arr);
-  };
-  return arr;
-};
 
+  let returnArray = [];
+  arr.forEach(num => {
+    if (num % 5 === 0 && num % 3 === 0) {
+      returnArray.push(`${num}Fizz Buzz`);
+    } else if (num % 5 === 0) {
+      returnArray.push(`${num}Buzz`);
+    } else if (num % 3 === 0) {
+      returnArray.push(`${num}Fizz`);
+    } else {
+      returnArray.push(num);
+    }
+    return returnArray;
+  });
+};
 /* ------------------------------------------------------------------------------------------------
 TESTS
 
