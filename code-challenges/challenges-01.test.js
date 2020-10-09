@@ -92,16 +92,16 @@ const fizzbuzz = (arr) => {
   let returnArray = [];
   arr.forEach(num => {
     if (num % 5 === 0 && num % 3 === 0) {
-      returnArray.push(`${num}Fizz Buzz`);
+      returnArray.push('Fizz Buzz');
     } else if (num % 5 === 0) {
-      returnArray.push(`${num}Buzz`);
+      returnArray.push('Buzz');
     } else if (num % 3 === 0) {
-      returnArray.push(`${num}Fizz`);
+      returnArray.push('Fizz');
     } else {
       returnArray.push(num);
     }
-    return returnArray;
   });
+  return returnArray;
 };
 /* ------------------------------------------------------------------------------------------------
 TESTS
