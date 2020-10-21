@@ -20,6 +20,7 @@ const $ = createSnippetWithJQuery(`
 `);
 
 const fixTheTypo = () => {
+  $('.pear').text('Pear');
 // Solution code here...
 };
 
@@ -32,6 +33,8 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['t', 
 ------------------------------------------------------------------------------------------------ */
 
 const firstLetters = (arr) => {
+  const array = arr.map(x => x[0]);
+  return array;
   // Solution code here...
 };
 
@@ -45,7 +48,14 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this
 
 const findHappiness = (arr) => {
   // Solution code here...
+  let array = [];
+  arr.forEach(word => {
+    if(word.includes(':)'))
+      array.push(word);
+  });
+  return array;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -56,7 +66,10 @@ For example, (123) 456-7890 returns 1234567890
 ------------------------------------------------------------------------------------------------ */
 
 const standardizePhoneNumbers = (arr) => {
-  // Solution code here...
+  let string = /[\(\)\- ]/g;
+  return arr.map(number => {
+    return number.replace(string, '');
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
