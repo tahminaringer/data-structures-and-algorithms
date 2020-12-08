@@ -16,4 +16,4 @@ Used medium.com to solve-
 
 ## Solution
 
-- ![whiteboard_class01](../assets/401-class01-whiteboard.png)
+![whiteboard_class01](../assets/array-reverse.png)
