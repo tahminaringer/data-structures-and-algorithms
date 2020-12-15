@@ -16,25 +16,29 @@ class LinkedList {
 
   // takes in any value as an argument and returns a boolean result depending on whether that value exists as a node's value somewhere within the list
   includes(value) {
-    let node = this.head;
+    let currentNode = this.head;
 
-    while (node) {
-      if(node.value === value) {
-        return true;
-      } else {
-        return false;
-      }
+    while (currentNode) {
+      if(currentNode.value === value) return true;
+      currentNode = currentNode.next;
     }
+    return false;
   }
 
   // takes in no arguments and returns a string representing all the values in the Linked List
   toString() {
-    let currentNode = this.head;
     let str = '';
+    let currentNode = this.head;
+
+    if(!this.head){
+      return 'NULL';
+    }
+
     while(currentNode) {
-      str += currentNode.value + ' ';
+      str += `${currentNode.value} -> `;
       currentNode = currentNode.next;
     }
+    str += `{${currentNode.value}} -> NULL`;
     return str;
   }
 }

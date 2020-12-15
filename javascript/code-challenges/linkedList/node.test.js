@@ -52,7 +52,7 @@ describe('LinkedList', () => {
     list.insert('a');
     list.insert('b');
     list.insert('c');
-    expect(list.toString()).toBe('{a} -> {b} -> {c}');
+    expect(list.toString()).toEqual('{c} -> {b} -> {a}');
   });
 
 });
