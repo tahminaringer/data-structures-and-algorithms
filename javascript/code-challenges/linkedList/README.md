@@ -1,4 +1,4 @@
-# Singly Linked List
+# Singly Linked List (labs 5 and 6)
 
 - By Tahmina Ringer, Jeremy Penning, Ashley Moore
 - Created a linked list and tests
@@ -36,3 +36,6 @@ Big 0 = O(1), O(n)
 - insert- to add a new node
 - includes- to search for existing node
 - toString- to return a string of all the nodes
+- append - add new node to LL tail
+- insertBefore- find existing value and insert node before existing value
+- insertAfter- find existing value and insert node after existing value
