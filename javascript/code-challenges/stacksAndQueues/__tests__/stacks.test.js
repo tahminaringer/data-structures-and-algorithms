@@ -24,8 +24,7 @@ describe('stacks', () => {
     it('pop off a single item off the stack', () => {
       let stack = new Stack();
       stack.push(1);
-      stack.pop();
-      expect(stack.top).toEqual(null);
+      expect(stack.pop()).toEqual(1);
     });
 
     it('can successfully empty a stack after multiple pops', () => {
@@ -61,8 +60,8 @@ describe('stacks', () => {
   describe('pop(), peek()', () => {
     it('Calling peek or pop on an empty stack raises exception', () => {
       let stack = new Stack();
-      expect(stack.pop()).toEqual('Stack is empty - cannot pop');
-      expect(stack.peek()).toEqual('Stack is empty - cannot peek');
+      expect(() => stack.pop()).toThrow('Stack is empty - cannot pop');
+      expect(() => stack.peek()).toThrow('Stack is empty - cannot peek');
     });
   });
 });

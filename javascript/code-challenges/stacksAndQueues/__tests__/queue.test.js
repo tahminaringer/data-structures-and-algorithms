@@ -24,8 +24,7 @@ describe('queues', () => {
     it('Can successfully dequeue off the queue', () => {
       let queue = new Queue();
       queue.enqueue(1);
-      queue.dequeue();
-      expect(queue.front.value).toEqual(null);
+      expect(queue.dequeue()).toEqual(1);
     });
     it('can successfully empty a queue after multiple pops', () => {
       let queue = new Queue();
