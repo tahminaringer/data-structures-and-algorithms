@@ -6,7 +6,7 @@ Authors: Tahmina Ringer & Jeremy Penning
 
 ## Challenge
 
-Learning how stacks and queues work.
+Learning how Binary Trees work.
 
 ## Approach & Efficiency
 
