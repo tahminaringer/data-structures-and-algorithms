@@ -1,6 +1,6 @@
 # Binary Trees
 
-1. Created a Node class, a Binary Search Tree Class with an extended class of BinaryTrees. Created methods for preOrder, InOrder, post Order for a binary tree. Included add() and contains() method for the binary search tree class to add node in order and search for a specific node
+1. Created a Node class, a Binary Search Tree Class with an extended class of BinaryTrees. Created methods for preOrder, InOrder and post Order for a binary tree. As well as included add() and contains() methods for the binary search tree class. Add() method adds node in order and contains() method searched for a specific node
 
 Authors: Tahmina Ringer & Jeremy Penning
 
@@ -26,10 +26,11 @@ Space - O(1)
 
 Write tests to prove the following functionality:
 
+### Challenge 15 testing
+
 - Can successfully instantiate a new node
 - Can successfully instantiate an empty Binary Search Tree
 - Can successfully instantiate a tree with a single root node
-- Can successfully return a maxValue from a Binary Tree
 - Can successfully add a left child and right child to a single root node
 - Can successfully returns null on BinaryTree methods if called on an empty tree
 - Can successfully return a collection from a preorder traversal
@@ -37,6 +38,10 @@ Write tests to prove the following functionality:
 - Can successfully return a collection from a postorder traversal
 - Can successfully returns true when running contains() on good value
 - Can successfully returns false when running contains() on bad value
+
+### Challenge 16 Testing
+
+- Can successfully return a maxValue from a Binary Tree
 
 ## UML
 

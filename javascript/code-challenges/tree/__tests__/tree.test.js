@@ -17,6 +17,7 @@ describe('Bianary Trees', () => {
       let tree = new BinarySearchTree();
       expect(tree.root).toBeNull();
     });
+
     it('add() can instantiate a new node', () => {
       let tree = new BinarySearchTree();
       tree.add(3);
