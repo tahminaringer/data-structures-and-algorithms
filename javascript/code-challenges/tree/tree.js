@@ -110,7 +110,6 @@ class BinarySearchTree extends BinaryTree {
       return false;
     } else {
       let containsNode = (node, value) => {
-        console.log('node, value ======', node.value, value);
         if(value < node.value){//if current node is less than node go left and traverse else skip to right side
           if(node.left === null) {//if left node equals null attach currentNode
             return false;

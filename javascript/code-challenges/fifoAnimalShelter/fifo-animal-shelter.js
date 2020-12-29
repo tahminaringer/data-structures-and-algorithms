@@ -23,6 +23,8 @@ class Animal {
         }
       }
           
-          dequeue(pref)
+          dequeue(pref) {
+            con
+          }
   }
 }

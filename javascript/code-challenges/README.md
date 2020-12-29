@@ -8,5 +8,11 @@
 - Class 06[Code Challenge 06](linkedList/README.md)
 - Class 07[Code Challenge 07](linkedList/README.md)
 - Class 08[Code Challenge 08](llZip/README.md)
+- Class 09 Practice Inerview
 - Class 10[Code Challenge 10](stacksAndQueues/README.md)
-- Class 11[Code Challenge 11](queueWithStacks/queue-with-stacks.js)
+- Class 11[Code Challenge 11](queueWithStacks/README.md)
+- Class 12[Code Challenge 12](fifoAnimalShelter/README.md)
+- Class 13[Code Challenge 13](multiBracketValidation/README.md)
+- Class 14 Practice Interview
+- Class 15[Binary Trees](tree/README.md)
+- Class 16[Code Challenge 16](tree/README.md)

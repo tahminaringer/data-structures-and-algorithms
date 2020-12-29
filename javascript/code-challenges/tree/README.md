@@ -6,7 +6,7 @@ Authors: Tahmina Ringer & Jeremy Penning
 
 2. Wrote an instance called findMaximumValue that returns the maximum value stored in the Binary Tree without using any built-in javascript methods
 
-Authors: Tahmina Ringer & Jeremy Penning
+Authors: Tahmina Ringer & Jeremy Penning & Ashley Moore
 
 ## Challenge
 
@@ -29,6 +29,7 @@ Write tests to prove the following functionality:
 - Can successfully instantiate a new node
 - Can successfully instantiate an empty Binary Search Tree
 - Can successfully instantiate a tree with a single root node
+- Can successfully return a maxValue from a Binary Tree
 - Can successfully add a left child and right child to a single root node
 - Can successfully returns null on BinaryTree methods if called on an empty tree
 - Can successfully return a collection from a preorder traversal
@@ -36,3 +37,7 @@ Write tests to prove the following functionality:
 - Can successfully return a collection from a postorder traversal
 - Can successfully returns true when running contains() on good value
 - Can successfully returns false when running contains() on bad value
+
+## UML
+
+- [UML Code Challenge 16](UMLCC16.png)
