@@ -17,6 +17,7 @@ describe('Bianary Trees', () => {
       let tree = new BinarySearchTree();
       expect(tree.root).toBeNull();
     });
+
     it('add() can instantiate a new node', () => {
       let tree = new BinarySearchTree();
       tree.add(3);
@@ -46,7 +47,7 @@ describe('Bianary Trees', () => {
       expect(maxValue).toBeNull();
     });
 
-    it('Can successfully return a collection from a preorder traversal', () => {
+    it('Can successfully return a maxValue from a Binary Tree', () => {
       let tree = new BinarySearchTree();
       tree.add(4);
       tree.add(2);
