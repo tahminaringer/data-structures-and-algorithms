@@ -13,6 +13,17 @@ class BinaryTree {
     this.root = null;
   }
 
+  findMaxValue() {
+    let maxValue = null;
+    let preOrderArr = this.preOrder();
+
+    for (let i=0; preOrderArr.length -1; i++) {
+      if (preOrderArr[i] > maxValue) {
+        maxValue = preOrderArr[i];
+      }
+    }
+    return maxValue;
+  }
 
   preOrder() {
     let array = [];
@@ -30,7 +41,6 @@ class BinaryTree {
       return array;
     }
   }
-
 
   inOrder() {
     let array = [];
