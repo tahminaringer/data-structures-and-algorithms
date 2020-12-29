@@ -39,9 +39,23 @@ describe('Bianary Trees', () => {
       let preOrder = tree.preOrder();
       let inOrder = tree.inOrder();
       let postOrder = tree.postOrder();
+      let maxValue = tree.findMaxValue();
       expect(preOrder).toBeNull();
       expect(inOrder).toBeNull();
       expect(postOrder).toBeNull();
+      expect(maxValue).toBeNull();
+    });
+
+    it('Can successfully return a collection from a preorder traversal', () => {
+      let tree = new BinarySearchTree();
+      tree.add(4);
+      tree.add(2);
+      tree.add(6);
+      tree.add(1);
+      tree.add(3);
+      tree.add(5);
+      let maxValue = tree.findMaxValue();
+      expect(maxValue).toEqual(6);
     });
 
     it('Can successfully return a collection from a preorder traversal', () => {
