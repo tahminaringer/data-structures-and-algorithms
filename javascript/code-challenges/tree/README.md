@@ -46,3 +46,4 @@ Write tests to prove the following functionality:
 ## UML
 
 - [UML Code Challenge 16](UMLCC16.png)
+- [UML Code Challenge 17](UMLCC17.png)

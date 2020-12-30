@@ -80,6 +80,65 @@ class BinaryTree {
 
 class BinarySearchTree extends BinaryTree {
 
+  breadthFirst(tree) {
+
+    if(!this.root) {
+      return null;
+    }else {
+      let breadthFirstTraversal = (node) => {
+        let queueArr = [];
+        if (this.root) {
+          this.root.value = queueArr[0];
+          queueArr[0] = this.root.value;
+          if (node.left){
+            node.left = queueArr[0];
+            queueArr[0] = node.left.value;
+          }
+        }else {
+          breadthFirstTraversal(node);
+          if (node.right){
+            node.right = queueArr[0];
+            queueArr[0] = node.right.value;
+          } else {
+            breadthFirstTraversal(node);
+          }
+          while(tree.length){
+            if (node.left){
+              node.left = this.root;
+              this.root = node.left;
+              if (node.left){
+                node.left = queueArr[0];
+                queueArr[0] = node.left.value;
+                if (node.right){
+                  node.right = queueArr[0];
+                  queueArr[0] = node.right.value;
+                }
+              }
+            } else {
+              breadthFirstTraversal(node);
+            }
+            if (node.right){
+              node.right = this.root;
+              this.root = node.right;
+              if (node.right){
+                node.right = queueArr[0];
+                queueArr[0] = node.right.value;
+                if (node.left){
+                  node.left = queueArr[0];
+                  queueArr[0] = node.left.value;
+                }
+              }
+            } else {
+              breadthFirstTraversal(node);
+            }
+          }
+        }
+        return queueArr;
+      };
+      breadthFirstTraversal();
+    }
+  }
+
   add(value) {
     let currentNode = new Node(value);
 
@@ -131,5 +190,7 @@ class BinarySearchTree extends BinaryTree {
     }
   }
 }
+
+
 
 module.exports = {Node, BinaryTree, BinarySearchTree};
