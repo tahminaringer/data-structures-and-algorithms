@@ -1,16 +1,20 @@
 # Binary Trees
 
-1. Created a Node class, a Binary Search Tree Class with an extended class of BinaryTrees. Created methods for preOrder, InOrder and post Order for a binary tree. As well as included add() and contains() methods for the binary search tree class. Add() method adds node in order and contains() method searched for a specific node
+## Challenge 15
 
 Authors: Tahmina Ringer & Jeremy Penning
 
-2. Wrote an instance called findMaximumValue that returns the maximum value stored in the Binary Tree without using any built-in javascript methods
+- Created a Node class, a Binary Search Tree Class with an extended class of BinaryTrees. Created methods for preOrder, InOrder and post Order for a binary tree. As well as included add() and contains() methods for the binary search tree class. Add() method adds node in order and contains() method searched for a specific node
+
+## Challenge 16
 
 Authors: Tahmina Ringer & Jeremy Penning & Ashley Moore
 
+- Wrote an instance called findMaximumValue that returns the maximum value stored in the Binary Tree without using any built-in javascript methods
+
 ## Challenge
 
-Learning how Binary Trees work.
+Learning how Binary Trees work and how to traverse using different methods.
 
 ## Approach & Efficiency
 
