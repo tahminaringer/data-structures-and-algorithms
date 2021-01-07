@@ -16,3 +16,5 @@
 - Class 14 Practice Interview
 - Class 15[Binary Trees](tree/README.md)
 - Class 16[Code Challenge 16](tree/README.md)
+- Class 17[Code Challenge 17](tree/README.md)
+- Class 18[Code Challenge 18](fizzBuzzTree/README.md)
