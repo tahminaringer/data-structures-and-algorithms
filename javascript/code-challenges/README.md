@@ -18,3 +18,5 @@
 - Class 16[Code Challenge 16](tree/README.md)
 - Class 17[Code Challenge 17](tree/README.md)
 - Class 18[Code Challenge 18](fizzBuzzTree/README.md)
+- Class 26[Code Challenge 26](insertionSort/README.md)
+

@@ -1,0 +1,15 @@
+{
+  "name": "insertionSort",
+  "version": "1.0.0",
+  "description": "- [Insertion-Sort /Medium](https://medium.com/javascript-algorithms/javascript-algorithms-insertion-sort-59b6b655373c) - [Insertion-Sort /Stack Abuse](https://stackabuse.com/insertion-sort-in-javascript/)",
+  "main": "insertion-sort.js",
+  "scripts": {
+    "test": "jest --coverage --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}
