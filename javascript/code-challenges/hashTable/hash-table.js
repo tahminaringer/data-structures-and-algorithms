@@ -39,12 +39,12 @@ class HashMap {
     }, 0) * 199 % this.size;
   }
   set(key, value) {
-    const hash = this.hash(key);
+    const index = this.hash(key);
     const entry = {[key]: value};
-    if( !this.map[hash] ){
-      this.map[hash] = new LinkedList();
+    if( !this.map[index] ){
+      this.map[index] = new LinkedList();
     }
-    this.map[hash].add(entry);
+    this.map[index].add(entry);
   }
   get(key) {
     let index = this.hash(key);
@@ -57,6 +57,19 @@ class HashMap {
       }
       current = current.next;
     }
+  }
+  contains(key) {
+    let index = this.hash(key);
+    let current = this.map[index].head;
+
+    while (current) {
+      let objKey = Object.keys(current.value);
+      if(objKey[0] === key) {
+        return true;
+      }
+      current = current.next;
+    }
+    return false;
   }
 }
 
