@@ -12,7 +12,7 @@ I wrote my code first and then wrote tests to validate the code.
 
 ## Big O
 
-Size - O(n)
+Time - O(n)
 Space - O(1)
 
 ## Testing

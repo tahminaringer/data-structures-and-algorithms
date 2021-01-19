@@ -44,4 +44,6 @@ class LinkedList {
   }
 }
 
+add(value){}
+
 module.exports = LinkedList;

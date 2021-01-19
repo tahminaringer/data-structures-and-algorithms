@@ -48,6 +48,7 @@ class HashMap {
   }
   get(key) {
     let index = this.hash(key);
+    if(!this.map[index]){ return null; }
     let current = this.map[index].head;
     while (current) {
       let objKey = Object.keys(current.value);
@@ -57,7 +58,9 @@ class HashMap {
       }
       current = current.next;
     }
+    return null;
   }
+
   contains(key) {
     let index = this.hash(key);
     let current = this.map[index].head;
