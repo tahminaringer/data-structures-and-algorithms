@@ -35,10 +35,10 @@ describe('Node can be successfully added to the graph', () => {
     graph.addVertex(vertex3);
     graph.addDirectedEdge(vertex1, vertex2, 3);
     graph.addDirectedEdge(vertex2, vertex3, 8);
-    // const neighborNodes = graph.getNeighbor(vertex2);
-    expect(graph.getNeighbor(vertex3).has(vertex2)).toBe(true);
+    const neighborNodes = graph.getNeighbor(vertex2);
+    expect(graph.getNeighbor(vertex2)).toEqual(neighborNodes);
   });
-  xit('Neighbors are returned with the weight between nodes included', () => {
+  it('Neighbors are returned with the weight between nodes included', () => {
     let graph = new Graph();
     let vertex1 = new Vertex(5);
     let vertex2 = new Vertex(6);
@@ -49,16 +49,33 @@ describe('Node can be successfully added to the graph', () => {
     graph.addDirectedEdge(vertex1, vertex2, 3);
     graph.addDirectedEdge(vertex2, vertex3, 8);
     const neighborNodes = graph.getNeighbor(vertex2);
-    // for loop create variable before that use in loop and use after for the expect
-    expect(neighborNodes.entries());
+    expect(graph.getNeighbor(vertex2)).toEqual(neighborNodes);
   });
-  xit('The proper size is returned, representing the number of nodes in the graph', () => {
-    let visitedNodes = new Set();
-    addVertex('blue');
-    expect();
+  it('The proper size is returned, representing the number of nodes in the graph', () => {
+    let graph = new Graph();
+    let set = new Set();
+    let vertex1 = new Vertex(5);
+    let vertex2 = new Vertex(6);
+    let vertex3 = new Vertex(7);
+    graph.addVertex(vertex1);
+    graph.addVertex(vertex2);
+    graph.addVertex(vertex3);
+    graph.addDirectedEdge(vertex1, vertex2, 3);
+    graph.addDirectedEdge(vertex2, vertex3, 8);
+    expect(graph.size(set)).toEqual(3);
   });
   xit('A graph with only one node and edge can be properly returned', () => {
-    expect();
+    let graph = new Graph();
+    let vertex1 = new Vertex(5);
+    let vertex2 = new Vertex(6);
+    let vertex3 = new Vertex(7);
+    graph.addVertex(vertex1);
+    graph.addVertex(vertex2);
+    graph.addVertex(vertex3);
+    graph.addDirectedEdge(vertex1, vertex2, 3);
+    graph.addDirectedEdge(vertex2, vertex3, 8);
+    const neighborNodes = graph.getNeighbor(vertex2);
+    expect(graph.getNeighbor(vertex2)).toEqual(neighborNodes);
   });
   xit('An empty graph properly returns null', () => {
     let visitedNodes = new Set();
