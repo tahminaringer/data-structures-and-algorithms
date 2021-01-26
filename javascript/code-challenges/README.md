@@ -20,3 +20,13 @@
 - Class 18[Code Challenge 18](fizzBuzzTree/README.md)
 - Class 26[Code Challenge 26](insertionSort/README.md)
 - Class 27[Code Challenge 27](merge-sort/README.md)
+- Class 28[Code Challenge 28](QuickSort/README.md)
+- Class 29 Practice Interview
+- Class 30[Hash Table](hashTable/README.md)
+- Class 31[Repeat Word](repeatedWord/README.md)
+- Class 32[Tree Intersection](treeIntersection/README.md)
+- Class 33[Left Join](leftJoin/README.md)
+- Class 34 Practice Interview
+- Class 35[Graphs](graph/README.md)
+- Class 36[Graph BFS](breadthFirst/README.md)
+- Class 37[Graph get edge](getEdge/README.md)
