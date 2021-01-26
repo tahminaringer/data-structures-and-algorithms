@@ -61,6 +61,21 @@ class Graph {
     return visitedNodes;
   }
 
+  dfs(startNode) {
+    const visitedNodes = new Set();
+    const _traverseNeighbors = (node) => {
+      visitedNodes.add(node);
+      const neighbors = this.getNeighbor(node);
+      for (let edge of neighbors) {
+        if(!visitedNodes.has(edge.vertex)) {
+          _traverseNeighbors(edge.vertex);
+        }
+      }
+    };
+    _traverseNeighbors(startNode);
+    return visitedNodes;
+  }
+
   size(startNode) {
     let count = 0;
     const visitedNodes = new Set();
