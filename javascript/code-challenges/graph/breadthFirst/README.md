@@ -1,4 +1,4 @@
-# Binary Trees
+# Graphs
 
 ## Challenge 36
 
