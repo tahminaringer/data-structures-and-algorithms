@@ -28,5 +28,6 @@
 - Class 33[Left Join](leftJoin/README.md)
 - Class 34 Practice Interview
 - Class 35[Graphs](graph/README.md)
-- Class 36[Graph BFS](breadthFirst/README.md)
-- Class 37[Graph get edge](getEdge/README.md)
+- Class 36[Graph BFS](graph/breadthFirst/README.md)
+- Class 37[Graph get edge](graph/getEdge/README.md)
+- Class 38[Depth First](graph/)

@@ -27,5 +27,3 @@ breadthFirst(startNode) {
   }
   return visitedNodes;
 }
-
-export mo
