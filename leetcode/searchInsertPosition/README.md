@@ -24,3 +24,5 @@ Example 5:
 Input: nums = [1], target = 0
 Output: 0
 ```
+
+- [Whiteboard](whiteboard.jpg)
