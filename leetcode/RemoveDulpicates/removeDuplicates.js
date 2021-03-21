@@ -1,17 +1,15 @@
 function removeDuplicates(head) {
 
-  if (!head) {
-    return null;
+  if (head === null) {
+    return head;
   }
 
-  let currentNode = this.head;
-  let prev = null;
+  let currentNode = head;
 
-  while (currentNode) {
-    if (currentNode === prev) {
-      currentNode = prev.next.next;
+  while (currentNode !== null && currentNode.next !== null) {
+    if (currentNode.next.val === currentNode.val) {
+      currentNode.next = currentNode.next.next;
     } else {
-      prev = currentNode;
       currentNode = currentNode.next;
     }
   }
