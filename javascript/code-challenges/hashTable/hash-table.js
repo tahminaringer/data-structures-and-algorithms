@@ -77,3 +77,29 @@ class HashMap {
 }
 
 module.exports = HashMap;
+
+
+function isLinkedListCircular(this.head) {
+  let currentNode = this.head;
+  let hash = {};
+  if (!currentNode) {
+    return true;
+  } else {
+    while (currentNode.next !== null && currentNode !== hash.currentNode) {
+      if(currentNode) {
+        hash.currentNode = currentNode;
+        hash.currentNode.value = 'true';
+      }
+      currentNode = currentNode.next;
+    }
+    if (currentNode === hash.currentNode && hash.currentNode.value === 'true') {
+      return true;
+    } else if (currentNode.next === null) {
+      return false;
+    } 
+  }
+  return false;
+}
+
+isLinkedListCircular();
+
