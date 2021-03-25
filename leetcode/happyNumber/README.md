@@ -13,3 +13,9 @@ INPUT = number
 OUTPUT = true or false
 
 ASSUME: 1 <= number <= 2^31 -1
+
+## Leet Code Problem
+
+- [leetCode](https://leetcode.com/problems/happy-number/)
+
+![Whiteboard](whiteboard.jpg)
