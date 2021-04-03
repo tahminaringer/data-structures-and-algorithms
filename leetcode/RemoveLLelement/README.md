@@ -11,4 +11,4 @@ OUTPUT: head with all values removed that are duplicates
 
 ## Whiteboard
 
-! [whiteboard](whiteboard.jpg)
+! [whiteboard](Untitled(10).jpg)
