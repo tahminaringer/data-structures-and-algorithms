@@ -28,7 +28,25 @@
 // Output: true
 
 var isValid = function(s) {
-    
+  // create a stack
+  let stack = [];
+  // loop through each element in the string
+  for(let i=0; i < s.length; i++) {
+    let character = stack[stack.length -1];
+    // If there is there is a staring bracket, push it into the stack
+    if(s[i] === '(' || s[i] === '{' || s[i] === '[') {
+      stack.push(s[i]);
+      //Pop the opening bracket off the stack
+      //if there is a matching closing bracket in the string
+    } else if((character === '(' && s[i] ===')') || 
+    (character === '{' && s[i] ==='}') ||
+    (character === '[' && s[i] ===']')) {
+      stack.pop();
+    } else {
+      return false;
+    }
+    return stack.length ? false : true;
+  }
 };
 
 isValid();
