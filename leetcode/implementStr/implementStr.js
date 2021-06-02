@@ -20,7 +20,7 @@
 
 // Input: haystack = "", needle = ""
 // Output: 0
- 
+
 // Constraints:
 
 // 0 <= haystack.length, needle.length <= 5 * 104
