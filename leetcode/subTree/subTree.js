@@ -5,5 +5,17 @@
 var isSubtree = function(root, subRoot) {
   if (!root || !subRoot) {
     return false;
-  }  
+  }
+  if (!root && !subRoot) {
+    return true;
+  }
+  if (!subRoot) {
+    return true;
+  }
+  if (!root) {
+    return false;
+  }
+  return isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot);
 };
+
+isSubtree();
