@@ -2,7 +2,8 @@
 
 // Return the number of good nodes in the binary tree.
 
-var goodNodes = function (root, count = 0) {
+var goodNodes = function (root) {
+  let count = 0;
   const dfs = (node, maxVal) => {
     if (node.val >= maxVal) {
       count++;
@@ -15,6 +16,6 @@ var goodNodes = function (root, count = 0) {
       dfs(node.right, maxVal);
     }
   };
-  dfs(root, count);
+  dfs(root, -Infinity);
   return count;
 };
