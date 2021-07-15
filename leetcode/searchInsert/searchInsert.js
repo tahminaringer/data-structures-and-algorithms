@@ -30,3 +30,5 @@ var searchInsert = function (nums, target) {
   }
   return target > nums[leftIdx] ? leftIdx + 1 : leftIdx;
 };
+
+module.exports = searchInsert;
