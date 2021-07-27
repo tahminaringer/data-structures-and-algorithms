@@ -1,11 +1,10 @@
 // https://leetcode.com/problems/missing-number/
 
 const missingNumber = function(nums) {
-  nums.sort(function(a,b) {
-    return (a -b);
-  });
-  for (let i = 0; i < nums.length; i ++) {
-    
+  let missNum = nums.length;
+  for (let i = 0; i < nums.length; i++) {
+    missNum ^= i ^ nums[i];
   }
+  return missNum;
 };
 missingNumber();
